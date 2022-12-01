@@ -17,9 +17,11 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '11'
-      - run:  cd example_app
+
       - run: flutter --version
-      - run: flutter pub get
+      - run: |
+        cd project_name
+        flutter packages get
 
 
 
