@@ -1,7 +1,8 @@
 name: Flutter Workflow
 on: [push, pull_request]
 jobs:
-  build: on Android
+  build:
+    name: on Android
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
