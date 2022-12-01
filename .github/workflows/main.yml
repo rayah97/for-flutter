@@ -20,7 +20,7 @@ jobs:
 
       - run: flutter --version
       - run: |
-          cd project_name
+          cd example_app
           flutter packages get
 
 
