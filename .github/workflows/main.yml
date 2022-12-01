@@ -19,7 +19,7 @@ jobs:
 #      - name: Install dependencies
 #        run: flutter pub get
       - run: flutter --version
-      - run:  java-version
+      - run:  java--version
 
 
 
