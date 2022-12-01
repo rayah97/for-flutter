@@ -12,7 +12,10 @@ jobs:
         with:
           flutter-version: '2.10.0'
           channel: 'stable'
-
+      - namee: Install Java
+        uses: actions/setup-java@v1
+        with:
+          java-version: '2.5.3'
 #      - name: Install dependencies
 #        run: flutter pub get
 
