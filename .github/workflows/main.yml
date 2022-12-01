@@ -16,8 +16,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '11'
-      - name: Install dependencies
-        run: flutter pub get
+#      - name: Install dependencies
+#        run: flutter pub get
+      - run: flutter --version
+
 
 
 
