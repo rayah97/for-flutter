@@ -1,7 +1,7 @@
 name: Flutter Workflow
 on: [push, pull_request]
 jobs:
-  build:
+  build: on Android
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -19,7 +19,11 @@ jobs:
 #      - name: Install dependencies
 #        run: flutter pub get
       - run: flutter --version
-      - run:  java--version
+      - run: flutter pub get
+      - run: flutter test
+      - run: flutter build apk
+      - run: flutter build appbundle
+#   build: on IOS
 
 
 
