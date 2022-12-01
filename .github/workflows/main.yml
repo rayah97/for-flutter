@@ -20,8 +20,8 @@ jobs:
 
       - run: flutter --version
       - run: |
-        cd project_name
-        flutter packages get
+          cd project_name
+          flutter packages get
 
 
 
