@@ -1,18 +1,23 @@
-name: Python package
-
-on: [push]
-
+name: Flutter Workflow
+on: [push, pull_request]
 jobs:
   build:
-
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.7", "3.8", "3.9", "3.10"]
-
+    runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
         with:
-          python-version: ${{ matrix.python-version }}
+          flutter-version: '2.10.0'
+          channel: 'stable'
+
+      - name: Install dependencies
+        run: flutter pub get
+
+
+
+
+
+
