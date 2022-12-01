@@ -20,10 +20,10 @@ jobs:
 #      - name: Install dependencies
 #        run: flutter pub get
       - run: flutter --version
-#      - run: flutter pub get
-      - run: flutter -h widget_test.dart
-      - run: flutter build apk
-      - run: flutter build appbundle
+      - run: flutter pub get
+#      - run: flutter -h widget_test.dart
+#      - run: flutter build apk
+#      - run: flutter build appbundle
 #   build: on IOS
 
 
