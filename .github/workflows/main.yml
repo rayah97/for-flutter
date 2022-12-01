@@ -17,14 +17,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '11'
-#      - name: Install dependencies
-#        run: flutter pub get
+      - run:  cd example_app
       - run: flutter --version
       - run: flutter pub get
-#      - run: flutter -h widget_test.dart
-#      - run: flutter build apk
-#      - run: flutter build appbundle
-#   build: on IOS
+
 
 
 
