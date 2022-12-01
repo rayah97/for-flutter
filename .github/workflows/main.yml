@@ -25,8 +25,12 @@ jobs:
       - run: |
           cd example_app
           flutter test
-      - run: flutter build apk
-      - run: flutter build appbundle
+      - run:  |
+          cd example_app
+          flutter build apk
+      - run: |
+          cd example_app
+          flutter build appbundle
 
 
 
